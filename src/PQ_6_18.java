@@ -6,11 +6,9 @@ public class PQ_6_18 {
 		} else {
 			for (int i = 0; i < str.length(); i++) {
 				char ch = str.charAt(i);
-				if ('0' <= ch && ch <= '9') {
-					continue;
-				} else if (!('0' <= ch && ch <= '9')) {
+				if (!('0' <= ch && ch <= '9')) {
 					return false;
-				}
+				} 			
 			}
 		}
 		return true;
