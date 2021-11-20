@@ -5,7 +5,7 @@ class SutdaDeck {
 	SutdaDeck() {
 		for (int i = 0; i < CARD_NUM; i++) {
 			int num = i%10 + 1;
-			boolean isKwang = i<10 && (i==0 || i==2 || i==7);
+			boolean isKwang = i<10 && (num==1 || num==3 || num==8);
 			cards[i]= new SutdaCard(num, isKwang); 
 			
 		}
